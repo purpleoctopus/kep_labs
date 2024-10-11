@@ -1,0 +1,23 @@
+<HTML>
+    <HEAD>
+    <TITLE>Остап'юк Денис</TITLE>
+    </HEAD>
+    <BODY BGCOLOR=white>
+    <H1>JavaScript Task 10</H1>
+    <HR>
+    <A href="javascript:void(0);" onclick="
+        let a = Number(prompt('Яка кількість студентів?: ')).toFixed(0)
+        let students = []
+        if(a > 0 && a != NaN){
+            for(let i = 0; i<a;i++){
+                students.push(prompt('Введіть ім\'я студента ' + i + ': '))
+            }
+        }else{
+            alert('Введіть коректну к-сть студентів')
+            return
+        }
+        document.write('Студенти: <br> ')
+        students.forEach(elem => document.write(elem +'<br>'))
+    ">Додати студентів</А>
+    </BODY>
+</HTML>
