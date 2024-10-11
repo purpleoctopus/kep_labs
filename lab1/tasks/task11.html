@@ -1,0 +1,21 @@
+<HTML>
+    <HEAD>
+    <TITLE>Остап'юк Денис</TITLE>
+    </HEAD>
+    <BODY BGCOLOR=white>
+    <H1>JavaScript Task 11</H1>
+    <HR>
+    <A href="javascript:void(0);" onclick="
+        let students = []
+        let i = 0;
+        while(true){
+            let input = prompt('Введіть ім\'я студента ' + i++ + ': ')
+            if(input == null)
+                break;
+            students.push(input)
+        }
+        document.write('Студенти: <br> ')
+        students.forEach(elem => document.write(elem +'<br>'))
+    ">Додати студентів</А>
+    </BODY>
+</HTML>
