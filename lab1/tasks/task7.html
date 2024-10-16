@@ -1,0 +1,18 @@
+<HTML>
+    <HEAD>
+    <TITLE>Остап'юк Денис</TITLE>
+    </HEAD>
+    <BODY BGCOLOR=white>
+    <H1>JavaScript Task 7</H1>
+    <HR>
+    <A href="javascript:void(0);" onclick="
+        let num1 = Number(prompt('Введіть перше число: '))
+        let num2 = Number(prompt('Введіть друге число: '))
+        if(!Number.isInteger(num1) || !Number.isInteger(num2)){
+            alert('Введіть коректне ціле число')
+            return
+        }
+        alert(num1 > num2 ? 'Перше число більше' : num1 != num2 ? 'Друге число більше': 'Числа рівні')
+    ">Порівнятор</А>
+    </BODY>
+</HTML>

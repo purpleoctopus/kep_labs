@@ -1,0 +1,21 @@
+<HTML>
+    <HEAD>
+    <TITLE>Остап'юк Денис</TITLE>
+    </HEAD>
+    <BODY BGCOLOR=white>
+    <H1>JavaScript Task 6</H1>
+    <HR>
+    <A href="javascript:void(0);" onclick="
+        let msg = prompt('Введіть 2 числа через + (до прикладу, 2+2): ')
+        {
+            let num1 = Number(msg.split('+')[0])
+            let num2 = Number(msg.split('+')[1])
+            if(!Number.isInteger(num1) || !Number.isInteger(num2)){
+                alert('Введіть коректне ціле число')
+                return
+            }
+            alert(num1 + num2)
+        }
+        ">Додаватор</А>
+    </BODY>
+</HTML>
