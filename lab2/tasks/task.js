@@ -22,9 +22,9 @@ game.gameInfo()
 console.log('\nTask 2: \n')
 
 let collection = [
-    {name: 'The Last Of Us', platform: 'PS3/PS4', genre: 'Survival, Action', year: 2013, isCompleted: true},
-    {name: 'Silent Hill', platform: 'PS/PC', genre: 'Survival, Horror', year: 1999, isCompleted: false},
-    {name: 'Heavy Rain', platform: 'PC/Xbox', genre: 'Action-adventure', year: 2010, isCompleted: true}
+    {name: 'The Last Of Us', platform: 'PS3/PS4', genre: 'Survival, Action', year: 2013, isCompleted: true, complete(){this.isCompleted = true}},
+    {name: 'Silent Hill', platform: 'PS/PC', genre: 'Survival, Horror', year: 1999, isCompleted: false, complete(){this.isCompleted = true}},
+    {name: 'Heavy Rain', platform: 'PC/Xbox', genre: 'Action-adventure', year: 2010, isCompleted: true, complete(){this.isCompleted = true}}
 ]
 
 function displayCollection(){
@@ -36,7 +36,7 @@ function displayCollection(){
 
 displayCollection()
 
-collection.push({name: 'DotA2', platform: 'PC', genre: 'MOBA', year: 2012, isCompleted: true})
+collection.push({name: 'DotA2', platform: 'PC', genre: 'MOBA', year: 2012, isCompleted: true, complete(){this.isCompleted = true}})
 
 displayCollection()
 
@@ -52,8 +52,6 @@ console.log('Непройдені ігри: ', uncompletedGames)
 
 let survivalGame = collection.find(game => game.genre.toLowerCase().includes('action'))
 console.log('Action-гра: ', survivalGame)
-
-console.log('\nTask 4: \n')
 
 function addGameToCollection(){
     let name = prompt('Введіть назву гри: ')
@@ -78,8 +76,18 @@ function addGameToCollection(){
     }
     let completed = confirm('Чи пройдена вами ця гра?')
 
-    collection.push({name,platform,genre,year,completed})
+    collection.push({name,platform,genre,year,completed, complete(){this.isCompleted = true}})
     displayCollection()
 }
 
 addGameToCollection()
+
+console.log('\nAvg year: \n')
+
+function calculateAverageYear(){
+    var sum = 0;
+    collection.forEach(elem => sum += elem.year)
+    return sum/collection.length
+}
+
+console.log(calculateAverageYear())
