@@ -80,8 +80,6 @@ function addGameToCollection(){
     displayCollection()
 }
 
-addGameToCollection()
-
 console.log('\nAvg year: \n')
 
 function calculateAverageYear(){
