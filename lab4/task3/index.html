@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ostapiuk Denys</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Тест таблиці множення</h2>
+    <p class="score">Загальний рахунок <span id="percent"></span> <span id="score"></span></p>
+        
+    <p id="question">Завдання з'явиться тут</p>
+        
+    <div id="answers">
+        <input type="radio" name="answer" id="option1" value="">
+        <label for="option1" id="label1"></label><br>
+
+        <input type="radio" name="answer" id="option2" value="">
+        <label for="option2" id="label2"></label><br>
+
+        <input type="radio" name="answer" id="option3" value="">
+        <label for="option3" id="label3"></label><br>
+
+        <input type="radio" name="answer" id="option4" value="">
+        <label for="option4" id="label4"></label><br>
+    </div>
+
+    <button onclick="checkAnswer()">Перевірити</button>
+    <p id="result"></p>
+    <button onclick="nextQuestion()">Наступне завдання</button>
+    
+    <script src="main.js"></script>
+</body>
+</html>
