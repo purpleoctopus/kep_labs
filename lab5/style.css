@@ -1,0 +1,53 @@
+html{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#result-1{
+    width: 5rem;
+    height: 5rem;
+    background-color: red;
+}
+textarea{
+    width: 50%;
+    margin-top: 1rem;
+}
+body{
+    background-color: gray;
+    padding: 2rem;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+}
+#tabs{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+#pointer{
+    position: absolute;
+    height: calc(1rem + 5px);
+    z-index: 0;
+    border-radius: 5px 5px 0 0;
+    top: 0;
+    background-color: white;
+    transition: left 0.5s ease-in-out, width 0.5s ease-in-out;
+    padding: 5px;
+}
+.tab-content{
+    display: block;
+    background-color: white;
+    height: 100%;
+    padding: 2rem;
+}
+.hide{
+    display: none;
+}
+#tab-container{
+    display: flex;
+    gap: 0.5rem;
+}
+.tab{
+    z-index: 1;
+    padding: 5px;
+}

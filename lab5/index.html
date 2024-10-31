@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ostapiuk Denys</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="tabs.js"></script>
+</head>
+<body>
+    <script src="cssgenerator.js"></script>
+    <div id="tabs">
+        <div id="tab-container">
+            <span class="tab">border-radius</span>
+            <span class="tab">list-style-position</span>
+            <span class="tab">list-style-type</span>
+        </div>
+        <div id="pointer"></div>
+        <div class="tab-content">
+            <div>Верхній лівий радіус:
+                <input id="rtl" type="range" min="0" max="100" value="0" oninput="generateRadius()">
+                <input type="text" id="ttl" value="0">
+            </div>
+            <div>Верхній правий радіус:
+                <input id="rtr" type="range" min="0" max="100" value="0" oninput="generateRadius()">
+                <input type="text" id="ttr" value="0">
+            </div>
+            <div>Нижній правий радіус:
+                <input id="rbr" type="range" min="0" max="100" value="0" oninput="generateRadius()">
+                <input type="text" id="tbr" value="0">
+            </div>
+            <div>Нижній лівий радіус:
+                <input id="rbl" type="range" min="0" max="100" value="0" oninput="generateRadius()">
+                <input type="text" id="tbl" value="0">
+            </div>
+            <div id="result-1"></div>
+            <textarea id="code-1"></textarea>
+        </div>
+        <div class="tab-content"> 
+            <div>Тип позиції у списку:
+                <select id="select-2" oninput="generateListPosition()">
+                    <option>inside</option>
+                    <option>outside</option>
+                </select>
+            </div>
+            <ul id="result-2">
+                <li>Elem 1 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus placeat hic repellendus enim
+                     distinctio, sapiente nisi. Officiis quibusdam debitis doloribus atque magni sapiente suscipit esse explicabo voluptas, 
+                     eum in perferendis!</li>
+                <li>Elem 2 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus placeat hic repellendus enim
+                    distinctio, sapiente nisi. Officiis quibusdam debitis doloribus atque magni sapiente suscipit esse explicabo voluptas, 
+                    eum in perferendis!</li>
+                <li>Elem 3 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus placeat hic repellendus enim
+                    distinctio, sapiente nisi. Officiis quibusdam debitis doloribus atque magni sapiente suscipit esse explicabo voluptas, 
+                    eum in perferendis!</li>
+            </ul>
+            <textarea id="code-2"></textarea>
+        </div>
+        <div class="tab-content">
+            <div>Тип маркера:
+                <select id="select-3" oninput="generateListType()">
+                    <option>circle</option>
+                    <option>disc</option>
+                    <option>square</option>
+                    <option>none</option>
+                    <option>decimal</option>
+                    <option>lower-alpha</option>
+                    <option>upper-alpha</option>
+                </select>
+            </div>
+            <ul id="result-3">
+                <li>Elem 1 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus placeat hic repellendus enim
+                     distinctio, sapiente nisi. Officiis quibusdam debitis doloribus atque magni sapiente suscipit esse explicabo voluptas, 
+                     eum in perferendis!</li>
+                <li>Elem 2 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus placeat hic repellendus enim
+                    distinctio, sapiente nisi. Officiis quibusdam debitis doloribus atque magni sapiente suscipit esse explicabo voluptas, 
+                    eum in perferendis!</li>
+                <li>Elem 3 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus placeat hic repellendus enim
+                    distinctio, sapiente nisi. Officiis quibusdam debitis doloribus atque magni sapiente suscipit esse explicabo voluptas, 
+                    eum in perferendis!</li>
+            </ul>
+            <textarea id="code-3"></textarea>
+        </div>
+    </div>
+</body>
+</html>
