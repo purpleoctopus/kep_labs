@@ -1,0 +1,27 @@
+body{
+    padding: 2rem;
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: gray;
+}
+main{
+    background-color: white;
+    height: 100%;
+    box-sizing: inherit;
+    border-radius: 1rem ;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+#result{
+    text-align: center;
+}
+.inputs{
+    margin: 0 auto;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
