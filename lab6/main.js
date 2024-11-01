@@ -64,7 +64,7 @@ function task5(){
         createPromiseWithDelay(2000), 
         createPromiseWithDelay(3000)  
     ];
-
+    asyncTask(promises[promises.length -1])
     Promise.all(promises)
         .then(results => {
             const sum = results.reduce((total, num) => total + num, 0);
