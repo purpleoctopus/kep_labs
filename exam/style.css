@@ -1,0 +1,28 @@
+form{
+    margin: auto;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(236, 236, 236);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.row{
+    display: flex;
+    width: 240px;
+    justify-content: space-between;
+}
+#text{
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 240px;
+    min-height: 120px;
+}
